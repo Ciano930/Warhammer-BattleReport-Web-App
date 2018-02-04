@@ -23,7 +23,10 @@
   </nav>
 
   <section class="Report-Title">
-    <h1 class="font-Style1"> <first>The</first> Ritual of Skulls</h1>
+    <h1 class="font-Style1">
+      <!--<input type="text" name="Report-Title-BattleName">-->
+      <first>The</first> Ritual of Skulls
+    </h1>
   </section>
 
   <section class="Report-Details-User">
@@ -67,6 +70,103 @@
       <p><strong>Date :</strong> <input type="date" name="Report-Details-Battle-Date"></p>
       <p><strong>Game Number :</strong> <input type="number" name="Report-Details-Battle-Number"></p>
     </div>
+  </section>
+
+  <section class="Report-Notes">
+    <div class=Report-Notes-DIV>
+      <strong>Notes :</strong>
+      <p class="Report-Notes-Text"> </p>
+    </div>
+  </section>
+
+  <section class="Report-Turns">
+    <div class="Report-Turns-Details">
+      <al>
+        <li><strong>Turn Order.<strong></li>
+        <li><strong>My Order.<strong></li>
+        <li><strong>Opponents Order.<strong></li>
+      </al>
+    </div>
+    <div class="Report-Turns-DIV">
+      <table class="Report-Turns-Table">
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+        <tr>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+        </tr>
+        <tr>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="Report-VictoryPoints">
+    <div class="Report-VictoryPoints-Details">
+      <al>
+        <li><strong>Turns.<strong></li>
+        <li><strong>My Victory Points.<strong></li>
+        <li><strong>Opponents Victory Points.<strong></li>
+      </al>
+    </div>
+    <div class="Report-VictoryPoints-DIV">
+      <table class="Report-VictoryPoints-Table">
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+        <tr>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+        </tr>
+        <tr>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+          <td placeholder="0"> </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+
+  <section class="Report-Result">
+    <div class="Report-Result-DIV">
+      <p><strong>My Victory Points:</strong> <input type="Number" name="Report-Result-VictoryPoints-Player" min="0"></p>
+      <p><strong>Opponents Victory Points:</strong> <input type="Number" name="Report-Result-VictoryPoints-Opponent" min="0"></p>
+    </div>
+
+    <div class="Report-Result-FinalResult">
+      <p><Strong>Result :</strong> <select class="Report-Result-FinalResult-Value" name="Final Result">
+        <option value="Major Victory">Major Victory</option>
+        <option value="Minor Victory">Minor Victory</option>
+        <option value="Draw">Draw</option>
+        <option value="Minor Loss">Minor Loss</option>
+        <option value="Major Loss">Major Loss</option>
+      </select>
+    </div>
+  </section>
+
 
 </body>
 
