@@ -23,34 +23,50 @@
   </nav>
 
   <section class="Report-Title">
-    <h1> <first>The</first> Ritual of Skulls</h1>
+    <h1 class="font-Style1"> <first>The</first> Ritual of Skulls</h1>
   </section>
 
-  <section class="Report-Details">
-    <div class="Report-Details-User">
-      <p><strong>Player :</strong> <input type="text" name="Report-Details-User-Name"></p>
-      <p><strong>Army :</strong> <input type="text" name="Report-Details-User-Army"></p>
-      <p><strong>General :</strong> <input type="text" name="Report-Details-User-General"> <img src="" alt="PlayerGeneral"></p>
+  <section class="Report-Details-User">
+    <div class="Report-Details-User-DIV">
+      <p><strong>Player :</strong> <input type="text" name="Report-Details-User-Name" placeholder="Username"></p>
+      <p><strong>Army :</strong> <input type="text" name="Report-Details-User-Army" placeholder="Bugmans Brewers"></p>
+      <p><strong>General :</strong> <input type="text" name="Report-Details-User-General" placeholder="Josef Bugman"> <img src="" alt="PlayerGeneral"></p>
       <p><strong>Allegiance :</strong> <select name="Report-Details-User-Alliegance">
-        <option value="Order"></option>
-        <option value="Death"></option>
-        <option value="Chaos"></option>
-        <option value="Destruction"></option>
+        <option value="Order">Order</option>
+        <option value="Death">Death</option>
+        <option value="Chaos">Chaos</option>
+        <option value="Destruction">Destruction</option>
+        </select>
       </p>
-    </div>
-
-    <div class="Report-Details-Opponent">
-      <p><strong>Opponent :</strong> <input type="text" name="Report-Details-Opponent-Name"></p>
-      <p><strong>Army :</strong> <input type="text" name="Report-Details-Opponent-Army"></p>
-      <p><strong>General :</strong> <input type="text" name="Report-Details-Opponent-General"> <img src="" alt="PlayerGeneral"></p>
-      <p><strong>Allegiance :</strong> <select name="Report-Details-Opponent-Alliegance">
-        <option value="Order"></option>
-        <option value="Death"></option>
-        <option value="Chaos"></option>
-        <option value="Destruction"></option>
-      </p>
+      <p><strong>Total Points :</strong> <input type="number" name="Report-Details-User-Points" placeholder="2000" max="10000" min="0"></p>
     </div>
   </section>
+  <section class="Report-Details-Opponent">
+    <div class="Report-Details-Opponent-DIV">
+      <p><strong>Opponent :</strong> <input type="text" name="Report-Details-Opponent-Name" placeholder="Opponent name"></p>
+      <p><strong>Army :</strong> <input type="text" name="Report-Details-Opponent-Army" placeholder="The Boyz of da Yellow Moon"></p>
+      <p><strong>General :</strong> <input type="text" name="Report-Details-Opponent-General" placeholder="Skarsnik Warlord of Eight Peaks"> <img src="" alt="PlayerGeneral"></p>
+      <p><strong>Allegiance :</strong> <select name="Report-Details-Opponent-Alliegance" >
+        <option value="Order">Order</option>
+        <option value="Death">Death</option>
+        <option value="Chaos">Chaos</option>
+        <option value="Destruction">Destruction</option>
+      </select>
+      </p>
+      <p><strong>Total Points :</strong> <input type="number" name="Report-Details-Opponent-Points" placeholder="2000" max="10000" min="0"></p>
+    </div>
+  </section>
+
+
+  <section class="Report-Details-Battle">
+    <div class="Report-Details-Battle-DIV">
+      <!-- Here we will add a button that will let us know what Game mode we are playing and based on the choice additional
+           options may drop down. Such as Matched Play will add a points limit-->
+      <p><strong>Battleplan :</strong> <input type="text" name="Report-Details-Battle-Battleplan"></p>
+      <p><strong>Event :</strong> <input type="text" name="Report-Details-Battle-Event"></p>
+      <p><strong>Date :</strong> <input type="date" name="Report-Details-Battle-Date"></p>
+      <p><strong>Game Number :</strong> <input type="number" name="Report-Details-Battle-Number"></p>
+    </div>
 
 </body>
 
