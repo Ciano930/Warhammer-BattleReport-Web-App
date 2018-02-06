@@ -1,16 +1,70 @@
-.font-Style1{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-weight: 300;
+@import url('https://fonts.googleapis.com/css?family=Prociono');
+
+
+*{
+  box-sizing: border-box;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+body{
+  margin: 0;
+  font-family: 'Prociono', fantasy;
+  text-align: center;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*==================Typography====================*/
+.Report-Title{
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+.Report-Title first{
+  font-size: 1.1em;
+}
+
+/*-----------Buttons-----------*/
+
+/*==================Header====================*/
+header{
+  /*position: absolute;*/
+  margin-top: 1em;
+}
+
+nav{
+  /*position: absolute;*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a{
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0.4em;
+}
+
+nav a:hover,
+nav a:focus{
+  color: grey;
+}
+
+/*==================Details====================*/
+
+.Report-Title{
+  background-image: url(../images/BarakZonSoldier.jpg);
 }

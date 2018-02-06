@@ -10,7 +10,7 @@
 <body>
   <header>
     <!-- MAIN HEADER FOR PAGE. -->
-    <img src="" alt="BattleReportLogo" class="logo">
+    <img src="images/logoKharadron.jpg" alt="BattleReportLogo" class="logo">
     <!-- Report Title-->
   </header>
   <nav>
@@ -30,7 +30,7 @@
   </section>
 
   <section class="Report-Details-User">
-    <div class="Report-Details-User-DIV">
+    <div class="container">
       <p><strong>Player :</strong> <input type="text" name="Report-Details-User-Name" placeholder="Username"></p>
       <p><strong>Army :</strong> <input type="text" name="Report-Details-User-Army" placeholder="Bugmans Brewers"></p>
       <p><strong>General :</strong> <input type="text" name="Report-Details-User-General" placeholder="Josef Bugman"> <img src="" alt="PlayerGeneral"></p>
@@ -45,7 +45,7 @@
     </div>
   </section>
   <section class="Report-Details-Opponent">
-    <div class="Report-Details-Opponent-DIV">
+    <div class="container">
       <p><strong>Opponent :</strong> <input type="text" name="Report-Details-Opponent-Name" placeholder="Opponent name"></p>
       <p><strong>Army :</strong> <input type="text" name="Report-Details-Opponent-Army" placeholder="The Boyz of da Yellow Moon"></p>
       <p><strong>General :</strong> <input type="text" name="Report-Details-Opponent-General" placeholder="Skarsnik Warlord of Eight Peaks"> <img src="" alt="PlayerGeneral"></p>
@@ -62,7 +62,7 @@
 
 
   <section class="Report-Details-Battle">
-    <div class="Report-Details-Battle-DIV">
+    <div class="container">
       <!-- Here we will add a button that will let us know what Game mode we are playing and based on the choice additional
            options may drop down. Such as Matched Play will add a points limit-->
       <p><strong>Battleplan :</strong> <input type="text" name="Report-Details-Battle-Battleplan"></p>
@@ -73,21 +73,21 @@
   </section>
 
   <section class="Report-Notes">
-    <div class=Report-Notes-DIV>
+    <div class="container">
       <strong>Notes :</strong>
       <p class="Report-Notes-Text"> </p>
     </div>
   </section>
 
   <section class="Report-Turns">
-    <div class="Report-Turns-Details">
+    <div class="container">
       <al>
         <li><strong>Turn Order.<strong></li>
         <li><strong>My Order.<strong></li>
         <li><strong>Opponents Order.<strong></li>
       </al>
     </div>
-    <div class="Report-Turns-DIV">
+    <div class="container">
       <table class="Report-Turns-Table">
         <tr>
           <th>1</th>
@@ -115,14 +115,14 @@
   </section>
 
   <section class="Report-VictoryPoints">
-    <div class="Report-VictoryPoints-Details">
+    <div class="container">
       <al>
         <li><strong>Turns.<strong></li>
         <li><strong>My Victory Points.<strong></li>
         <li><strong>Opponents Victory Points.<strong></li>
       </al>
     </div>
-    <div class="Report-VictoryPoints-DIV">
+    <div class="container">
       <table class="Report-VictoryPoints-Table">
         <tr>
           <th>1</th>
@@ -151,12 +151,12 @@
 
 
   <section class="Report-Result">
-    <div class="Report-Result-DIV">
+    <div class="container">
       <p><strong>My Victory Points:</strong> <input type="Number" name="Report-Result-VictoryPoints-Player" min="0"></p>
       <p><strong>Opponents Victory Points:</strong> <input type="Number" name="Report-Result-VictoryPoints-Opponent" min="0"></p>
     </div>
 
-    <div class="Report-Result-FinalResult">
+    <div class="container">
       <p><Strong>Result :</strong> <select class="Report-Result-FinalResult-Value" name="Final Result">
         <option value="Major Victory">Major Victory</option>
         <option value="Minor Victory">Minor Victory</option>
