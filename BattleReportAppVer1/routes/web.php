@@ -12,8 +12,9 @@
 ** Route::delete($uri, $callback);
 */
 
+//Main homepage
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('reports', function(){
